@@ -21,7 +21,6 @@ if (hotReload) {
 }
 
 let devServerConfig = {
-  contentBase: 'ui',
   hot: hotReload,
   stats: {
     colors: true,

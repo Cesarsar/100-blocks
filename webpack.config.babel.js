@@ -27,7 +27,7 @@ export default {
         loader: 'style!css!postcss!less'
       },
       {
-        test: /\/layout\.less$/,
+        test: /\/loading\.less$/,
         loader: ExtractTextPlugin.extract('style', 'css!postcss!less')
       },
       {
@@ -46,7 +46,7 @@ export default {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     }),
-    new ExtractTextPlugin('static/styles/layout.css', {allChunks: true})
+    new ExtractTextPlugin('src/styles/loading.css', {allChunks: true})
   ],
   postcss: () => [autoprefixer],
   devtool: 'cheap-module-source-map'
